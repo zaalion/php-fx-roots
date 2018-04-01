@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<table width="75%" border="0">
+  <tr>
+    <td><form name="form1" method="post" action="sample.php">
+        <table width="75%" border="0" bgcolor="#CCCCCC">
+          <tr> 
+            <td colspan="2"><p align="left">&nbsp;</p></td>
+          </tr>
+          <tr> 
+            <td width="30%"><strong>Function</strong> </td>
+            <td width="70%"><strong>f(x)=</strong> <input name="function_x" type="text" id="function_x" value="x*x-10" size="50" maxlength="50"></td>
+          </tr>
+          <tr> 
+            <td><strong>Find roots between</strong> </td>
+            <td><strong>x_start</strong>: 
+              <input name="x_start" type="text" id="x_start" value="-5" size="6" maxlength="6">
+              to <strong>x_end</strong> <input name="x_end" type="text" id="x_end" value="5" size="6" maxlength="6"></td>
+          </tr>
+          <tr> 
+            <td><strong>f(x) tolerance:</strong></td>
+            <td><select name="tolerance" id="tolerance">
+                <option value=".1">.1</option>
+                <option value=".01" selected>.01</option>
+                <option value=".001">.001</option>
+                <option value=".0001">.0001</option>
+              </select>
+              <em>(select smaller values to get better answers.)</em></td>
+          </tr>
+          <tr> 
+            <td><strong>x steps</strong></td>
+            <td><select name="step" id="step">
+                <option value="10">10</option>
+                <option value="1.1">1</option>
+                <option value=".11">.1</option>
+                <option value=".011" selected>.01</option>
+                <option value=".0011">.001</option>
+              </select>
+              <em>(select smaller values to avoid root missing.)</em></td>
+          </tr>
+          <tr> 
+            <td colspan="2"><div align="right">
+                <input type="submit" name="Submit" value="Find Roots">
+              </div></td>
+          </tr>
+        </table>
+      </form></td>
+  </tr>
+</table>
+</body>
+</html>
