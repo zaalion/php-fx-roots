@@ -43,7 +43,7 @@
 			imagestring($image, 2, 20, 415, "Root(s) ", $col1);
 			for($i=0;$i<$number;$i++)	
 				imagestring($image, 2, 20, 430+(15*$i), "x[".$i."] = ".$this->roots[$i], $col1);
-			imagejpeg($image,"",100);
+			imagejpeg($image,null,100);
 			}
 			
 		function find()
